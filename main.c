@@ -36,7 +36,7 @@ int main() {
 	int **matrix = createMatrix(rows, columns);
 
 	//Fill the matrix
-	printf("Enter the elements of the matrix[>1]: ");
+	printf("Enter the elements of the matrix[>0]: ");
 	fillMatrix(matrix);
 	printMatrix(matrix, rows, columns);
 
