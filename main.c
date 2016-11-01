@@ -51,6 +51,14 @@ int main() {
 	printMatrix(final_matrix, rows, columns);
 
 	//Free memory
+	int f;
+	for(f=0; f<rows; f++)
+	{
+		free(matrix[f]);
+		free(padded_matrix[f]);
+		free(final_matrix[f]);
+	}
+
 	free(matrix);
 	free(padded_matrix);
 	free(final_matrix);
